@@ -1,0 +1,2793 @@
+@charset "utf-8";
+
+/*
+section : main start
+main-wrap :  메인 콘텐츠 wrap
+*/
+#main-wrap {
+    height: auto;
+    margin: 0 auto;
+}
+
+/*content-top, con0 : 광고 및 배너*/
+.content-top {
+    width: 1260px;
+    height: 470px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*left-bn : 왼쪽 광고 이미지*/
+.left-bn {
+    width: 105px;
+    height: 135px;
+}
+
+/*center-sd : 가운데 메인*/
+.center-sd {
+    width: 1105px;
+    height: 450px;
+    display: flex;
+}
+
+/*center-lf : 메인의 사이드 - 문진 ~ 노벨문학상*/
+.center-lf {
+    width: 25px;
+    height: 308px;
+    margin-top: 140px;
+}
+
+/*center-mn : 메인 콘텐츠 wrap*/
+.center-mn {
+    width: 1030px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #e5eff7;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*mn-top : 메인의 위, 책 또는 광고 뜨는 부분*/
+.mn-top {
+    width: 1020px;
+    height: 380px;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/*book slide common*/
+.booktitle {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+    letter-spacing: -1.5px;
+    margin-bottom: 10px;
+}
+
+.contents {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #2a68b9;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: center;
+    color: #737373;
+}
+
+/*book-sd1 : 편집장의 선택*/
+.book-sd1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd1>div {
+    width: 210px;
+    height: 327px;
+}
+
+.book-sd1>div>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/*book-sd2 : 추천 이벤트*/
+.book-sd2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd2>div {
+    width: 275px;
+    height: 327px;
+}
+
+.book-sd2>div>img {
+    width: 275px;
+    height: 327px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(226, 226, 226, 0.7);
+}
+
+/*book-sd3 : 이 주의 책*/
+.book-sd3 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd3>div {
+    width: 210px;
+    height: 327px;
+}
+
+.book-sd3>div>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/*book-sd4 : 신간 소개*/
+.book-sd4 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd4>div {
+    width: 210px;
+    height: 327px;
+}
+
+.book-sd4>div>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/*book-sd5 : 베스트 예감*/
+.book-sd5 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd5>div {
+    width: 210px;
+    height: 327px;
+}
+
+.book-sd5>div>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/*book-sd6 : 화제의 책*/
+.book-sd6 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd6>div {
+    width: 210px;
+    height: 327px;
+}
+
+.book-sd6>div>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/*book-sd7 : 이벤트 굿즈*/
+.book-sd7 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd7>div {
+    width: 210px;
+    height: 327px;
+}
+
+.book-sd7>div>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.book-sd7>div>.cover>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.book-sd7>div>.gift {
+    width: 85px;
+    height: 85px;
+    border: 2px solid #feb80d;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: -95px 0 0 125px;
+}
+
+.book-sd7>div>.gift>img {
+    width: 100%;
+    height: 100%;
+}
+
+.book-sd7>div>.more {
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    margin: -100px 0 0 115px;
+}
+
+/*book-sd8 : 눈에 띄는 새책*/
+.book-sd8 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd8>div {
+    width: 210px;
+    height: 327px;
+}
+
+.book-sd8>div>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.book-sd8>div>.cover>img {
+    width: 170px;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.book-sd8>div>.gift {
+    width: 85px;
+    height: 85px;
+    border: 2px solid #feb80d;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin: -95px 0 0 125px;
+}
+
+.book-sd8>div>.gift>img {
+    width: 100%;
+    height: 100%;
+}
+
+.book-sd8>div>.more {
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    margin: -100px 0 0 115px;
+}
+
+/*book-sd9 : eBook*/
+.book-sd9 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.book-sd9>div {
+    width: 275px;
+    height: 327px;
+}
+
+.book-sd9>div>img {
+    width: 275px;
+    height: 327px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(226, 226, 226, 0.7);
+}
+
+/*mn-bot : 메인의 아래, 제목 탭*/
+.mn-bot {
+    width: 1020px;
+    height: 63px;
+    background-color: #e5eff7;
+}
+
+/*tab-menu : 제목 탭 wrap*/
+.tab-menu {
+    display: flex;
+    padding-top: 8px;
+}
+
+.tab-menu>div {
+    width: 111.111px;
+    height: 34px;
+    font-size: 13px;
+    color: #3c5980;
+    line-height: 33px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.tab-menu>div:nth-of-type(1) {
+    color: #fff;
+    background-color: #2a68b9;
+    border-radius: 17px;
+}
+
+/*right-bn : 알라딘 us, 도서관 사서, 광고 이미지*/
+.right-bn {
+    width: 76px;
+    height: 330px;
+}
+
+.right-bn>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-bn>ul>li:nth-child(1) {
+    margin-top: -4px;
+    padding-bottom: 1px;
+}
+
+.right-bn>ul>li:nth-child(2) {
+    padding-bottom: 5px;
+}
+
+.right-bn>ul>li:nth-child(3) {
+    border-bottom: 1px solid #eee;
+}
+
+.right-bn>ul>li:nth-child(4) {
+    padding-top: 5px;
+}
+
+.right-bn>ul>li>a>span {
+    width: 76px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ee3c97;
+    border: 1px solid #d92883;
+}
+
+.bn-top {
+    padding: 5px 10px 5px 10.5px;
+}
+
+.bn-bot {
+    padding: 5px 4px 5px 4px;
+}
+
+/*content1 : 첫 번째 콘텐츠 - 편집장의 선택 ~ 알라딘굿즈 및 광고*/
+.content1 {
+    width: 1055px;
+    height: 410px;
+    padding: 20px 0 0 25px;
+    margin: 0 auto;
+}
+
+.con1-wrap {
+    width: 1030px;
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*con1-left : 편집장의 선택 ~ 알리딘굿즈 콘텐츠*/
+.con1-left {
+    width: 687px;
+    height: 390px;
+}
+
+/*con1-lf-top : 분야 탭 및 버튼 wrap*/
+.con1-lf-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*con1-tab :  분야 탭, tab1-편집장의 선택, tab2-eBook, tab3-외국도서, tab4-알라딘굿즈*/
+.con1-tab {
+    width: 455px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 36px;
+}
+
+.con1-tab1 {
+    width: 110px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: inline-block;
+}
+
+.con1-tab1>a {
+    color: #333;
+}
+
+.con1-tab2 {
+    width: 110px;
+    background-color: #EDEFF1;
+    border: 1px solid #dadada;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: inline-block;
+}
+
+.con1-tab2>a {
+    color: #333;
+}
+
+.con1-tab3 {
+    width: 110px;
+    background-color: #EDEFF1;
+    border: 1px solid #dadada;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: inline-block;
+}
+
+.con1-tab3>a {
+    color: #333;
+}
+
+.con1-tab4 {
+    width: 110px;
+    background-color: #EDEFF1;
+    border: 1px solid #dadada;
+    border-bottom: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    display: inline-block;
+}
+
+.con1-tab4>a {
+    color: #333;
+}
+
+/*con1-btn : 편집장의 선택 ~ 알라딘굿즈 콘텐츠 제어하는 버튼*/
+.con1-btn {
+    width: 63px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.con1-prev {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: url(../img/4.con_1/left/1.svg) no-repeat center right 9px / 6px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con1-next {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: url(../img/4.con_1/left/2.svg) no-repeat center right 8px / 6px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*con1-lf-bot : 편집장의 선택 ~ 알라딘굿즈 콘텐츠 wrap*/
+.con1-lf-bot {
+    width: 687px;
+    height: 354px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*con1-bot1 : 편집장의 선택 wrap*/
+.con1-bot1 {
+    width: 687px;
+    height: 354px;
+    display: flex;
+    flex-wrap: row;
+}
+
+/*con1-bot1>div : 편집장의 선택 page들*/
+.con1-bot1>div {
+    width: 687px;
+    height: 354px;
+    padding: 20px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*con1-bot1-1 : 편집장의 선택 1page*/
+.con1-bot1-1>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot1-1>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot1-1>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot1-1>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot1-1>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot1-2 : 편집장의 선택 2page*/
+.con1-bot1-2>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot1-2>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot1-2>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot1-2>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot1-2>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot1-3 : 편집장의 선택 3page*/
+.con1-bot1-3>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot1-3>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot1-3>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot1-3>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot1-3>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot1-4 : 편집장의 선택 4page*/
+.con1-bot1-4>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot1-4>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot1-4>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot1-4>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot1-4>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot2 : eBook wrap*/
+.con1-bot2 {
+    width: 687px;
+    height: 354px;
+    display: flex;
+    flex-wrap: row;
+}
+
+.con1-bot2>div {
+    width: 687px;
+    height: 354px;
+    padding: 20px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*con1-bot2-1 : eBook 1page*/
+.con1-bot2-1>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot2-1>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot2-1>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot2-1>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot2-1>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot2-2 : eBook 2page*/
+.con1-bot2-2>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot2-2>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot2-2>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot2-2>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot2-2>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot2-3 : eBook 3page*/
+.con1-bot2-3>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot2-3>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot2-3>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot2-3>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot2-3>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot2-4 : eBook 4page*/
+.con1-bot2-4>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot2-4>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot2-4>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot2-4>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot2-4>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot3 : 외국도서 wrap*/
+.con1-bot3 {
+    width: 687px;
+    height: 354px;
+    display: flex;
+    flex-wrap: row;
+}
+
+.con1-bot3>div {
+    width: 687px;
+    height: 354px;
+    padding: 20px 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*con1-bot3-1 : 외국도서 1page*/
+.con1-bot3-1>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot3-1>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot3-1>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot3-1>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot3-1>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot3-2 : 외국도서 2page*/
+.con1-bot3-2>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot3-2>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot3-2>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot3-2>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot3-2>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot3-3 : 외국도서 3page*/
+.con1-bot3-3>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot3-3>div>img {
+    width: 136px;
+    height: 205px;
+    margin-bottom: 15px;
+}
+
+.con1-bot3-3>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot3-3>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot3-3>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot4 : 알라딘굿즈 wrap*/
+.con1-bot4 {
+    width: 687px;
+    height: 354px;
+    display: flex;
+    flex-wrap: row;
+}
+
+.con1-bot4>div {
+    width: 687px;
+    height: 354px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*con1-bot4-1 : 외국도서 1page*/
+.con1-bot4-1>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot4-1>div>img {
+    width: 210px;
+    height: 205px;
+    margin-bottom: 15px;
+    border: 1px #e2e2e2 solid;
+}
+
+.con1-bot4-1>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot4-1>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot4-1>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot4-2 : 외국도서 2page*/
+.con1-bot4-2>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot4-2>div>img {
+    width: 210px;
+    height: 205px;
+    margin-bottom: 15px;
+    border: 1px #e2e2e2 solid;
+}
+
+.con1-bot4-2>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot4-2>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot4-2>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-bot4-3 : 외국도서 3page*/
+.con1-bot4-3>div {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot4-3>div>img {
+    width: 210px;
+    height: 205px;
+    margin-bottom: 15px;
+    border: 1px #e2e2e2 solid;
+}
+
+.con1-bot4-3>div>.booktitle {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.con1-bot4-3>div>.booktitle>a {
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.con1-bot4-3>div>.contents {
+    width: 145px;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+    font-weight: lighter;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+/*con1-right : 광고 배너 이미지*/
+.con1-right {
+    width: 305px;
+    height: 360px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*con1-bns : 광고 배너 이미지 wrap*/
+.con1-bns {
+    width: 305px;
+    height: 360px;
+    display: flex;
+}
+
+/*con1-prev2, con1-next2 : 광고 배너 제어하는 버튼*/
+.con1-prev2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 150px;
+    left: 15px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/1.svg) no-repeat center right 11px / 7px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con1-next2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 150px;
+    right: 15px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/2.svg) no-repeat center right 10px / 7px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/*content2 : 두 번째 콘텐츠 - 어제 베스트 셀러 TOP 10 및 광고*/
+.content2 {
+    width: 1055px;
+    height: 315px;
+    padding: 15px 0 40px 25px;
+    margin: 0 auto;
+}
+
+.con2-wrap {
+    width: 1030px;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*con2-left : 어제 베스트셀러 TOP 10 메인 콘텐츠*/
+.con2-left {
+    width: 836px;
+    height: 260px;
+}
+
+/*con2-lf-tab : 어제 베스트셀러 TOP 10 제목 wrap*/
+.con2-lf-tab {
+    width: 836px;
+    height: 52px;
+}
+
+.con2-lf-tab>h3 {
+    padding-top: 10px;
+}
+
+.con2-lf-tab>h3>a {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+/*con2-list : 베스트셀러 목록*/
+.con2-list {
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    color: #444;
+}
+
+/*공통 css*/
+.con2-list>li {
+    display: flex;
+    width: 250px;
+    height: auto;
+    margin-right: 30px;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+    padding: 13px 38px 13px 0;
+}
+
+.bk-cover {
+    width: 58px;
+    max-height: 72px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.con2-list>li>.rank {
+    color: #444;
+    width: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.con2-list>li>p {
+    height: auto;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.con2-list>li>p>a {
+    color: #333;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.status-up {
+    background: url(../img/5.con_2/rank1/ranking-up.svg) no-repeat left center / 6px auto;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    color: #737373;
+    padding-left: 10px;
+    right: 5px;
+}
+
+.status-down {
+    background: url(../img/5.con_2/rank1/ranking-down.svg) no-repeat left center / 6px auto;
+    position: absolute;
+    top: 20px;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #737373;
+    padding-left: 10px;
+    right: 5px;
+}
+
+.status-still {
+    width: 4px;
+    height: 1px;
+    background: url(../img/5.con_2/rank1/standstill.svg) no-repeat center / 10px 1px;
+    position: absolute;
+    right: 5px;
+    top: 16px;
+    padding-left: 10px;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #737373;
+}
+
+.con2-list>li>.status-new {
+    color: #dd2483;
+    font-size: 11px;
+    position: absolute;
+    right: 5px;
+    top: 16px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/*베스트 1위*/
+.con2-list>li:nth-child(1)>.rank {
+    color: #dd2483;
+    width: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.con2-list>li:nth-child(1)>p {
+    width: 120px;
+}
+
+.con2-list>li:nth-child(1)>.status-up {
+    top: 68px;
+}
+
+/*베스트 3위*/
+
+.con2-list>li:nth-child(3) {
+    height: 59px;
+    padding-bottom: 3px;
+}
+
+.con2-list>li:nth-child(3)>.status-new {
+    padding-top: 13px;
+}
+
+/*베스트 4위*/
+.con2-list>li:nth-child(4)>.status-up {
+    top: 20px;
+}
+
+/*베스트 7위*/
+.con2-list>li:nth-child(7) {
+    height: 59px;
+    padding-bottom: 3px;
+}
+
+.con2-list>li:nth-child(7)>.status-still {
+    padding-bottom: 16px;
+}
+
+
+/*con2-right : 광고 배너 이미지 슬라이드*/
+.con2-right {
+    width: 190px;
+    height: 207px;
+    margin-top: 53px;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*con2-bn : 배너 이미지 wrap*/
+.con2-bn {
+    width: 190px;
+    height: 207px;
+    display: flex;
+}
+
+/*content3 : 세 번째 콘텐츠 - 중간 광고 배너 이미지*/
+.content3 {
+    margin: 0 auto;
+    height: 100px;
+    z-index: -2;
+
+}
+
+/*con3-bgc : 배너 이미지의 뒷배경*/
+.con3-bgc {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: row;
+    z-index: -2;
+}
+
+.con3-bgc1 {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    position: absolute;
+    background-color: #f4c9e8;
+}
+
+.con3-bgc2 {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    position: absolute;
+    background-color: #e1f4c9;
+}
+
+/*con3-wrap : 배너 이미지와 버튼의 wrap*/
+.con3-wrap {
+    width: 1030px;
+    height: 130px;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.con3-prev {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 65px;
+    left: 1px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/1.svg) no-repeat center right 11px / 7px auto;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con3-next {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 65px;
+    right: -1px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/2.svg) no-repeat center right 10px / 7px auto;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con3-bns {
+    width: 1030px;
+    height: 130px;
+    display: flex;
+}
+
+/*content4 : 네 번째 콘텐츠 - 추천마법사의 선택*/
+.content4 {
+    width: 1055px;
+    height: 487px;
+    margin: 0 auto;
+    padding: 80px 0 0 25px;
+}
+
+.con4-wrap {
+    width: 1030px;
+    height: 397px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*con4-top : 제목 및 버튼의 wrap*/
+.con4-top {
+    width: 1030px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con4-top>h3 {
+    padding-top: 10px;
+}
+
+.con4-top>h3>a {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.con4-top>h3>span {
+    color: #333;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+
+.con4-top>h3>span>a {
+    color: #2A68B9;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-decoration: underline;
+}
+
+/*con4-prev, con4-next : 버튼*/
+.con4-prev {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/1.svg) no-repeat center right 14px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con4-next {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/2.svg) no-repeat center right 12px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*con4-bottom : 네 번째 콘텐츠 메인*/
+.con4-bottom {
+    width: 1030px;
+    height: 355px;
+}
+
+.con4-bk {
+    margin-top: 30px;
+    height: 335px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*con4-bk-wrap : 책 목록들의 wrap*/
+.con4-bk-wrap {
+    width: 1030px;
+    display: flex;
+    flex-wrap: row;
+    position: absolute;
+}
+
+/*imgA : 책 목록 속 이미지(책 커버), con4-bk-menu : 커버 속 숨겨진 서브 메뉴*/
+.imgA {
+    position: relative;
+}
+
+.imgA:hover>.con4-bk-menu {
+    display: block;
+}
+
+.con4-bk-menu {
+    position: absolute;
+    bottom: 0.1px;
+    width: 172px;
+    height: 108px;
+    background-color: rgba(75, 75, 75, 0.97);
+    display: none;
+    overflow: hidden;
+}
+
+.con4-bk-menu>li>a {
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.con4-bk-menu>li:hover {
+    background-color: #eb217c;
+}
+
+.con4-bk-menu>li {
+    text-align: center;
+    cursor: pointer;
+}
+
+/*con4-bk1 : 책 목록 1page*/
+.con4-bk1 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con4-bk1>div {
+    width: 210px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+}
+
+.con4-bk1>div>.imgA>a>img {
+    width: 172px;
+    height: 248px;
+}
+
+.con4-bk1>div>.booktitle {
+    width: 180px;
+    margin-top: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+/*con4-bk2 : 책 목록 2page*/
+.con4-bk2 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con4-bk2>div {
+    width: 210px;
+    height: 335px;
+}
+
+.con4-bk2>div>.imgA>a>img {
+    width: 172px;
+    height: 248px;
+}
+
+
+.con4-bk2>div>.booktitle {
+    width: 180px;
+    margin-top: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+/*con4-bk3 : 책 목록 3page*/
+.con4-bk3 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con4-bk3>div {
+    width: 210px;
+    height: 335px;
+}
+
+.con4-bk3>div>.imgA>a>img {
+    width: 172px;
+    height: 248px;
+}
+
+
+.con4-bk3>div>.booktitle {
+    width: 180px;
+    margin-top: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+/*con4-bk4 : 책 목록 4page*/
+.con4-bk4 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con4-bk4>div {
+    width: 210px;
+    height: 335px;
+}
+
+.con4-bk4>div>.imgA>a>img {
+    width: 172px;
+    height: 248px;
+}
+
+.con4-bk4>div>.booktitle {
+    width: 180px;
+    margin-top: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+/*content5 : 다섯 번째 콘텐츠 - 화제의 책 소식*/
+.content5 {
+    width: 1055px;
+    height: 335px;
+    margin: 0 auto;
+    padding: 50px 0 0 25px;
+}
+
+.con5-wrap {
+    width: 1030px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*con5-top : 제목 및 버튼의 wrap*/
+.con5-top {
+    width: 1030px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con5-top>h3 {
+    padding-top: 10px;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+/*버튼*/
+.con5-prev {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/1.svg) no-repeat center right 14px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con5-next {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/2.svg) no-repeat center right 12px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*con5-bottom : 다섯 번째 콘텐츠의 메인*/
+.con5-bottom {
+    margin-top: 24px;
+    width: 1030px;
+    height: 260px;
+}
+
+.con5-bk {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+.con5-bk-wrap {
+    width: 1030px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-wrap: row;
+    position: absolute;
+}
+
+/*con5-bk1 : 책 소식 1page*/
+.con5-bk1 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con5-bk1>div {
+    width: 335px;
+    height: 230px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 25px 20px;
+    background-color: #F3F3F5;
+}
+
+.con5-bk1>div>a>img {
+    width: 115px;
+    margin-right: 15px;
+}
+
+.con5-bk1>div>.tit {
+    width: 165px;
+    height: auto;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #444;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.con5-bk1>div>.sub {
+    width: 165px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #444;
+    letter-spacing: -0.5px;
+}
+
+/*con5-bk2 : 책 소식 2page*/
+.con5-bk2 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con5-bk2>div {
+    width: 335px;
+    height: 230px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 25px 20px;
+    background-color: #F3F3F5;
+}
+
+.con5-bk2>div>a>img {
+    width: 115px;
+    margin-right: 15px;
+}
+
+.con5-bk2>div>.tit {
+    width: 165px;
+    height: auto;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #444;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.con5-bk2>div>.sub {
+    width: 165px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #444;
+    letter-spacing: -0.5px;
+}
+
+/*con5-bk3 : 책 소식 3page*/
+.con5-bk3 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con5-bk3>div {
+    width: 335px;
+    height: 230px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 4px;
+    padding: 25px 20px;
+    background-color: #F3F3F5;
+}
+
+.con5-bk3>div>a>img {
+    width: 115px;
+    margin-right: 15px;
+}
+
+.con5-bk3>div:nth-child(2)>a>img {
+    width: 115px;
+    height: 150px;
+    margin-right: 15px;
+}
+
+.con5-bk3>div>.tit {
+    width: 165px;
+    height: auto;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #444;
+    letter-spacing: -0.5px;
+    margin-bottom: 15px;
+}
+
+.con5-bk3>div>.sub {
+    width: 165px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #444;
+    letter-spacing: -0.5px;
+}
+
+
+/*content6 : 여섯 번째 콘텐츠 - 알라딘이 만든 사은품*/
+.content6 {
+    width: 1055px;
+    height: 360px;
+    margin: 0 auto;
+    padding: 70px 0 0 25px;
+}
+
+.con6-wrap {
+    width: 1030px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*con6-top : 제목 및 버튼*/
+.con6-top {
+    width: 1030px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con6-top>h3 {
+    padding-top: 10px;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.con6-prev {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/1.svg) no-repeat center right 14px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con6-next {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/2.svg) no-repeat center right 12px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*con6-bottom : 여섯 번째 콘텐츠의 메인*/
+.con6-bottom {
+    margin-top: 24px;
+    width: 1030px;
+    height: 260px;
+}
+
+.con6-gd {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+}
+
+.con6-gd-wrap {
+    width: 1030px;
+    display: flex;
+    flex-wrap: row;
+    position: absolute;
+}
+
+/*con6-gd1 : 사은품 1page*/
+.con6-gd1 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con6-gd1>div {
+    width: 335px;
+    height: 230px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.con6-gd1>div>a>img {
+    width: 335px;
+    height: 230px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.con6-gd1-txt {
+    width: 335px;
+    height: 38px;
+    margin-top: 192px;
+    background-color: #272727;
+    opacity: 0.7;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.con6-gd1-txt>p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 0 10px;
+}
+
+/*con6-gd2 : 사은품 2page*/
+.con6-gd2 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con6-gd2>div {
+    width: 335px;
+    height: 230px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.con6-gd2>div>a>img {
+    width: 335px;
+    height: 230px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.con6-gd2-txt {
+    width: 335px;
+    height: 38px;
+    margin-top: 192px;
+    background-color: #272727;
+    opacity: 0.7;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.con6-gd2-txt>p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 0 10px;
+}
+
+/*con6-gd3 : 사은품 3page*/
+.con6-gd3 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con6-gd3>div {
+    width: 335px;
+    height: 230px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.con6-gd3>div>a>img {
+    width: 335px;
+    height: 230px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.con6-gd3-txt {
+    width: 335px;
+    height: 38px;
+    margin-top: 192px;
+    background-color: #272727;
+    opacity: 0.7;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.con6-gd3-txt>p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 0 10px;
+}
+
+/*con6-gd4 : 사은품 4page*/
+.con6-gd4 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con6-gd4>div {
+    width: 335px;
+    height: 230px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.con6-gd4>div>a>img {
+    width: 335px;
+    height: 230px;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.con6-gd4-txt {
+    width: 335px;
+    height: 38px;
+    margin-top: 192px;
+    background-color: #272727;
+    opacity: 0.7;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.con6-gd4-txt>p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 0 10px;
+}
+
+/*content7 : 일곱 번째 콘텐츠 - 알라딘 스페셜*/
+.content7 {
+    width: 1055px;
+    height: 467px;
+    margin: 0 auto;
+    padding: 60px 0 0 25px;
+}
+
+.con7-wrap {
+    width: 1030px;
+    height: 397px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*con7-top : 제목 및 버튼*/
+.con7-top {
+    width: 1030px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con7-top-txt {
+    width: 245px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con7-top-txt>h3>a {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 2.1;
+}
+
+.con7-top-txt>p {
+    color: #096b94;
+    background-color: #d7f0f6;
+    display: inline-block;
+    padding: 10px 17px 10px 15px;
+    font-size: 14px;
+    height: 34px;
+    letter-spacing: -0.5px;
+    font-weight: bolder;
+    border-radius: 17px 17px 17px 2px;
+}
+
+.con7-prev {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/1.svg) no-repeat center right 14px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con7-next {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/2.svg) no-repeat center right 12px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/*con7-bottom : 일곱 번째 콘텐츠의 메인*/
+.con7-bottom {
+    width: 1030px;
+    height: 355px;
+}
+
+.con7-sp {
+    margin-top: 30px;
+    height: 325px;
+    position: relative;
+    overflow: hidden;
+}
+
+.con7-sp-wrap {
+    width: 1030px;
+    display: flex;
+    flex-wrap: row;
+    position: absolute;
+
+}
+
+/*con7-sp1 : 1page*/
+.con7-sp1 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con7-sp1>div {
+    width: 210px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+}
+
+.con7-sp1>div:nth-child(1) {
+    margin-left: 10px;
+}
+
+.con7-sp1>div>a>img {
+    width: 170px;
+    height: 248px;
+    margin-bottom: 20px;
+}
+
+.con7-sp1>div>.booktitle {
+    width: 180px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+/*con7-sp2 : 2page*/
+.con7-sp2 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con7-sp2>div {
+    width: 210px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+}
+
+.con7-sp2>div:nth-child(1) {
+    margin-left: 10px;
+}
+
+.con7-sp2>div>a>img {
+    width: 170px;
+    height: 248px;
+    margin-bottom: 20px;
+}
+
+.con7-sp2>div>.booktitle {
+    width: 180px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+/*con7-sp3 : 3page*/
+.con7-sp3 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con7-sp3>div {
+    width: 210px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+}
+
+.con7-sp3>div:nth-child(1) {
+    margin-left: 10px;
+}
+
+.con7-sp3>div>a>img {
+    width: 170px;
+    height: 248px;
+    margin-bottom: 20px;
+}
+
+.con7-sp3>div>.booktitle {
+    width: 180px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+/*con7-sp4 : 4page*/
+.con7-sp4 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con7-sp4>div {
+    width: 210px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+}
+
+.con7-sp4>div:nth-child(1) {
+    margin-left: 10px;
+}
+
+.con7-sp4>div>a>img {
+    width: 170px;
+    height: 248px;
+    margin-bottom: 20px;
+}
+
+.con7-sp4>div>.booktitle {
+    width: 180px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-align: start;
+}
+
+/*content8 : 여덟 번째 콘텐츠 - 세 개의 광고 배너 이미지*/
+.content8 {
+    width: 1055px;
+    height: 270px;
+    margin: 0 auto;
+    padding: 60px 0 0 25px;
+}
+
+.con8-bn {
+    width: 1030px;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.con8-bn-wrap {
+    width: 1030px;
+    display: flex;
+    flex-wrap: row;
+    position: absolute;
+
+}
+
+/*con8-bn1 : 1page*/
+.con8-bn1 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con8-bn1>img {
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/*con8-bn2 : 2page*/
+.con8-bn2 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con8-bn2>img {
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/*content9 : 아홉 번째 콘텐츠 - 추천 노트*/
+.content9 {
+    width: 1055px;
+    height: 461px;
+    margin: 0 auto;
+    padding: 80px 0 0 25px;
+}
+
+.con9-wrap {
+    width: 1030px;
+    height: 381px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*con9-top : 제목 및 버튼*/
+.con9-top {
+    width: 1030px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con9-top>h3 {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    padding-top: 10px;
+}
+
+.con9-top>p {
+    color: #737373;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+.con9-top>p>span {
+    font-weight: bold;
+}
+
+.con9-top>h3>span>a {
+    color: #2A68B9;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    text-decoration: underline;
+}
+
+.con9-btn {
+    margin-left: auto;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.con9-prev {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/1.svg) no-repeat center right 14px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.con9-next {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/4.con_1/left/2.svg) no-repeat center right 12px / 8px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*con9-bottom : 아홉 번째 콘텐츠의 메인*/
+.con9-bottom {
+    width: 1030px;
+    height: 290px;
+}
+
+/*공통 css*/
+.con9-nt {
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+}
+
+.con9-nt-wrap {
+    width: 1030px;
+    display: flex;
+    flex-wrap: row;
+    position: absolute;
+}
+
+.con9-img {
+    width: 197px;
+    height: 175px;
+}
+
+.con9-img>img {
+    width: 197px;
+}
+
+.con9-txt {
+    width: 197px;
+    height: 115px;
+    padding: 20px 15px;
+}
+
+.con9-txt>h3 {
+    color: #444;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.con9-txt>p {
+    color: #6e6e6e;
+    font-size: 12px;
+    text-align: left;
+}
+
+/*con9-nt1 : 1page*/
+.con9-nt1 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con9-nt1>div {
+    width: 197px;
+    height: 290px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f5;
+    border-radius: 4px;
+}
+
+.con9-nt1>div>.con9-img>img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/*con9-nt2 : 2page*/
+.con9-nt2 {
+    width: 1030px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con9-nt2>div {
+    width: 197px;
+    height: 290px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f3f5;
+    border-radius: 4px;
+}
+
+.con9-nt2>div>.con9-img>img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+/*content10 : 열 번째 콘텐츠 - 알라디너 TV 및 작가와의 만남*/
+.content10 {
+    width: 1055px;
+    height: 356px;
+    margin: 0 auto;
+    padding: 70px 0 0 25px;
+}
+
+.con10-wrap {
+    width: 1030px;
+    height: 285px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*con10-tv : 알라디너 TV*/
+.con10-tv {
+    width: 618px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.con10-tv-top {
+    width: 618px;
+    height: 35px;
+}
+
+.con10-tv-top>h3 {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    padding-top: 10px;
+}
+
+/*con10-tv-bot : 알리디너 TV 콘텐츠 메인*/
+.con10-tv-bot {
+    width: 618px;
+    height: 250px;
+}
+
+.con10-tv-bot-wrap {
+    width: 618px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.con10-tv-bot-mn {
+    width: 200px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*con10-tv-mn-thumb : 알라디너 TV 콘텐츠 썸네일*/
+.con10-tv-mn-thumb>a>img {
+    width: 200px;
+    height: 113px;
+    border-radius: 4px;
+}
+
+/*con10-tv-mn-txt : 알라디너 TV 콘텐츠 텍스트 (제목, 해시태그, 조회수)*/
+.con10-tv-mn-txt {
+    width: 200px;
+    height: 105px;
+}
+
+.con10-tv-mn-txt>h3>a {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.con10-tv-mn-txt>h3 {
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.con10-tv-mn-txt>p>a {
+    color: #2a68b9;
+    font-size: 12px;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+.con10-tv-mn-txt>p {
+    color: #444;
+    font-size: 12px;
+    letter-spacing: -1px;
+    text-align: left;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/*con10-meet : 작가와의 만남*/
+.con10-meet {
+    width: 367px;
+    height: 285px;
+}
+
+.con10-meet-top {
+    width: 367px;
+    height: 35px;
+}
+
+.con10-meet-top>h3 {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    padding-top: 10px;
+}
+
+/*
+        con10-meet-bot : 작가와의 만남 콘텐츠의 메인
+        con10-meet-bot-wrap : 콘텐츠(2개)의 전체 wrap
+        */
+.con10-meet-bot-wrap {
+    width: 367px;
+    height: 230px;
+    padding-top: 20px;
+}
+
+.con10-meet-bot-mn {
+    width: 367px;
+    height: 101px;
+    display: flex;
+}
+
+.con10-meet-bot-mn-img {
+    width: 90px;
+    height: 90px;
+    padding-top: 15px;
+}
+
+.con10-meet-bot-mn-img>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.con10-meet-bot-mn-txt {
+    width: 269.5px;
+    height: 101px;
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.con10-meet-bot-mn-txt>h3 {
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.con10-meet-bot-mn-txt>p {
+    color: #737373;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: left;
+}
+/*main end*/

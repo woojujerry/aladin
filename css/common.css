@@ -1,0 +1,680 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*common.css - header start*/
+/*top : 홈페이지 최상단 - 광고*/
+#top {
+    height: 60px;
+    background-color: rgb(126, 91, 247);
+}
+
+.top-wrap {
+    margin: 0 auto;
+    width: 1260px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left>img {
+    width: 475px;
+    height: 60px;
+}
+
+.right>img {
+    width: 475px;
+    height: 60px;
+}
+
+.close>a>img {
+    margin-top: 10px;
+}
+
+/*header : 홈페이지 상단 - 메뉴 및 로그인 네비게이션*/
+header {
+    height: 160px;
+}
+
+#head-top {
+    height: auto;
+    background-color: #33afe9;
+    margin: 0 auto;
+}
+
+.top-navs {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*top-nav1 : HOME, 국내도서, 외국도서 등등 북플·서재까지*/
+.top-nav1 {
+    display: flex;
+}
+
+.top-nav1>li>a {
+    font-size: 13px;
+    color: #fff;
+    line-height: 38px;
+    padding: 0 7px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+}
+
+.top-nav1>li:nth-child(1)>a {
+    color: #0f4e8a;
+    background-color: #fff;
+    display: inline-block;
+    border-top: 1px solid #4496D9;
+    border-left: 1px solid #4496D9;
+    border-right: 1px solid #4496D9;
+}
+
+/*top-nav2 : 알라디너TV, 이 책의 한 문장, 북펀드*/
+.top-nav2 {
+    display: flex;
+}
+
+.top-nav2>li>a {
+    font-size: 11px;
+    color: #fff;
+    line-height: 37px;
+    padding: 0 4px;
+    font-weight: bold;
+}
+
+/*head-wrapAll : 홈페이지 상단 - 로고 및 검색란, 메뉴 네비게이션*/
+#head-wrapAll {
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #33AFE9;
+}
+
+/*head-wrap1 : 로고 및 검색란 그리고 광고 이미지*/
+#head-wrap1 {
+    width: 1200px;
+    height: 88px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.head-logo {
+    width: 212px;
+    height: 88px;
+}
+
+/*head-form : 검색란 (.in-box1)*/
+.head-form {
+    width: 477px;
+    height: 41px;
+    margin-top: 25px;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 15px;
+    background: url(../img/2.head_wrap/4.png) no-repeat;
+}
+
+.head-form>.in-box1>span>a {
+    font-size: 12px;
+    color: #2f9ddc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.head-form>.in-box1>img {
+    margin: 7px 13px 0 13px
+}
+
+/*head-form-in-box-sub1 : 통합검색 메뉴 - show : javascript / con_menu_head*/
+.head-form-in-box-sub1 {
+    width: 88px;
+    height: 377px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+    text-align: left;
+    border: 2px solid #5397d0;
+    z-index: 10000;
+    left: 4;
+    display: none;
+}
+
+.head-form-in-box-sub1>li>a {
+    font-size: 12px;
+    min-width: 75px;
+    color: #006699;
+    display: block;
+    padding: 5px 10px 5px 7px;
+}
+
+.head-form-in-box-sub1>li>a:hover {
+    background-color: #e5eff7;
+}
+
+.head-form-in-box-sub1>li>img {
+    width: 81px;
+    margin: 5px 0 7px 0;
+}
+
+/*head-form > .in-box2, in-box3 : 검색란*/
+.head-form>.in-box2 {
+    width: 320px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background: url(../img/2.head_wrap/5.gif) no-repeat left 280px center;
+}
+
+.head-form>.in-box2>input {
+    width: 280px;
+    line-height: 20px;
+    display: inline;
+    font-weight: bold;
+    border: none;
+}
+
+.head-form>.in-box2>input::placeholder {
+    color: #006699;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.head-form>.in-box3>button {
+    background: none;
+    border: none;
+    font-size: 15px;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*head-ad : 광고 이미지*/
+.head-ad {
+    margin-left: 20px;
+    width: 167px;
+    height: 88px;
+}
+
+.head-ad>img {
+    padding-top: 12px;
+}
+
+/*head-wrap2 : 분야보기, 추천마법사 등등 -  알라디너TV ~ 북펀드까지*/
+#head-wrap2 {
+    width: 1200px;
+    height: 32px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*head-nav1 : 분야보기 ~ 투비컨티뉴드*/
+.head-nav1 {
+    width: 755px;
+}
+
+/*h-nav1-menu : 분야보기 ~ 투비컨티뉴드의 wrap*/
+.h-nav1-menu {
+    display: flex;
+    margin-top: 5px;
+    position: relative;
+}
+
+/*h-nav1-menu>li:nth-child(1) : 분야보기, 아이콘 이미지 설정*/
+.h-nav1-menu>li:nth-child(1) {
+    background: url(../img/2.head_wrap/6.png) no-repeat left -1px top 6px;
+    padding-left: 10px;
+}
+
+.h-nav1-menu>li {
+    display: inline-block;
+}
+
+.h-nav1-menu>li>span {
+    color: #0f4e8a;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.h-nav1-menu>li>a {
+    color: #0f4e8a;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 7px 3px 7px;
+    letter-spacing: -0.5px;
+    line-height: 23px;
+}
+
+.h-nav1-menu>li>a>img {
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.h-nav1-menu>li:nth-child(8)>a>.new {
+    background-color: #f32383;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 10px;
+    font-size: 8px;
+    font-weight: normal;
+    padding: 0 3.5px 1.5px 3px;
+}
+
+.h-nav1-menu>li:nth-child(9)>a {
+    color: #26b5bf;
+}
+
+.h-nav1-menu>li>a>span>img {
+    width: 13px;
+    height: 13px;
+    margin-top: 6px;
+}
+
+/*h-nav1-menu-main : 분야보기의 서브 메뉴*/
+#h-nav1-menu-main {
+    width: 1044px;
+    display: none;
+    z-index: 10000;
+    background-color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 1px;
+    padding: 7px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#h-nav1-menu-main>table {
+    width: 1030px;
+    border: 0;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+    text-align: left;
+}
+
+.menu-main-tit {
+    height: 30px;
+    background-color: #3a3a3a;
+    margin-bottom: 5px;
+    padding: 5px 0 5px 9px;
+}
+
+.menu-main-tit>a {
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.menu-main-con {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-main-con>ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 140px;
+}
+
+.menu-main-con>ul>li {
+    margin: 0 0 0 5px;
+    font-size: 13px;
+    padding: 5px 0 5px 0;
+}
+
+.menu-main-con>ul>li>a {
+    color: #333;
+    font-size: 13px;
+    margin: 0 0 0 10px;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+/*h-nav1-menu-sub1, 2 : 추천마법사, 새로나온 책, 이벤트, 추천도서의 서브 메뉴*/
+.h-nav1-menu-sub1 {
+    width: 127px;
+    height: 130px;
+    background-color: #fff;
+    box-shadow: 0px 3px 16px #00000033;
+    position: absolute;
+    padding: 14px 18px 10px 18px;
+    display: block;
+    text-align: left;
+    display: none;
+}
+
+.h-nav1-menu-sub1>li>a {
+    display: block;
+    padding-bottom: 15px;
+    color: #333;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+.h-nav1-menu-sub2 {
+    width: 127px;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0px 3px 16px #00000033;
+    position: absolute;
+    padding: 14px 18px 10px 18px;
+    display: block;
+    text-align: left;
+    display: none;
+}
+
+.h-nav1-menu-sub2>li>a {
+    display: block;
+    padding-bottom: 15px;
+    color: #333;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+/*head-nav2 : 알라디너 TV, 이 책의 한 문장 등*/
+.head-nav2 {
+    width: 240px;
+}
+
+.h-nav2-menu {
+    display: flex;
+    margin-top: 7px;
+}
+
+.h-nav2-menu>li {
+    display: inline-block;
+}
+
+.h-nav2-menu>li>a {
+    color: #dd2483;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 3px 3px 3px;
+    line-height: 20px;
+}
+
+.h-nav2-menu>li>span {
+    color: #dd2483;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 3px 3px 3px;
+}
+
+/*h-nav2-menu-sub1 : 이 책의 한 문장의 서브 메뉴*/
+.h-nav2-menu-sub1 {
+    width: 127px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 3px 16px #00000033;
+    position: absolute;
+    padding: 14px 18px 10px 18px;
+    display: block;
+    text-align: left;
+    display: none;
+}
+
+.h-nav2-menu-sub1>li>a {
+    display: block;
+    padding-bottom: 15px;
+    color: #333;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+/*common.css - header end*/
+
+/*
+common.css - restart
+footer start
+*/
+footer {
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.footer-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*footer menu : 회사소개 ~ 학교·기업·기관 대량구매*/
+.footer-menu {
+    margin: 0 auto;
+    width: 100%;
+    height: 65px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px;
+}
+
+.footer-menu>ul {
+    width: 1070px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.footer-menu>ul>li>a {
+    color: #333;
+    font-size: 13px;
+    line-height: 18px;
+    padding-right: 15px;
+}
+
+.footer-menu>ul>li>a>span {
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+/*footer info : 알라딘 소개 및 고객센터*/
+.footer-info {
+    width: 1070px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+/*ft-left : 알라딘 소개*/
+.ft-left {
+    width: 715px;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.ft-if1 {
+    height: 122px;
+    padding-bottom: 20px;
+}
+
+.ft-if1>h3 {
+    height: 20px;
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ft-if1>address {
+    width: 710px;
+    height: 62px;
+    font-style: normal;
+}
+
+.ft-if1>address>span {
+    display: inline-block;
+    margin: 0 18px 5px 0;
+    color: #444;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.copyright {
+    height: 34px;
+    display: inline-block;
+    margin: 0 18px 5px 0;
+    color: #737373;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.ft-if2 {
+    height: 40px;
+    display: flex;
+}
+
+.certify {
+    width: 132px;
+}
+
+.certify>a>p {
+    color: #333;
+    height: 34px;
+    font-size: 11px;
+    padding: 8px 0 0 40px;
+    line-height: 1.2;
+}
+
+.certify:nth-of-type(1) {
+    background: url(../img/14.footer/1.jpg) no-repeat center left;
+    margin-right: 30px;
+}
+
+.certify:nth-of-type(2) {
+    background: url(../img/14.footer/2.jpg) no-repeat center left;
+}
+
+/*ft-right : 고객센터*/
+.ft-right {
+    width: 340px;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.ft-rt1 {
+    height: 90px;
+    padding: 20px 0 20px 0;
+}
+
+.ft-rt1>h3 {
+    height: 20px;
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ft-rt1>address {
+    width: 340px;
+    height: 30px;
+    font-style: normal;
+}
+
+.ft-rt1>address>span {
+    display: inline-block;
+    margin: 0 18px 5px 0;
+    color: #444;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.ft-rt2 {
+    width: 340px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ft-rt2-top {
+    width: 330px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ft-rt2-top>a {
+    width: 160px;
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+    line-height: 34px;
+    display: inline-block;
+}
+
+.ft-rt2-bot {
+    width: 330px;
+    height: 36px;
+}
+
+.ft-rt2-bot>a {
+    width: 330px;
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+    line-height: 34px;
+    display: inline-block;
+    background: url(../img/14.footer/location.svg) no-repeat 55px;
+}
+
+/*go-top : 위로 가기 버튼 - javascript / con_button_go_top*/
+.go-top {
+    width: 74px;
+    height: 74px;
+    cursor: pointer;
+    background: url(../img/15.etc/go-top.png) no-repeat;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    font-size: 0px;
+    color: transparent;
+    text-indent: -999em;
+    z-index: 999;
+    border: 0;
+}
+
+/*
+footer end
+common.css - reend
+*/

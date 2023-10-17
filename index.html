@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://image.aladin.co.kr/img/home/aladin.ico" type="image/x-icon" rel="shortcut icon">
+    <title>알라딘</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <!--go to top : 위로 가기 버튼-->
+    <script src="js/con_button_go_top.js"></script>
+    <!--head menu : 추천마법사 및 새로나온 책 등등-->
+    <script src="js/con_menu_head.js"></script>
+    <!--contents show = con0(top) + con1-->
+    <script src="js/con_show_bundle.js"></script>
+    <!--contents banner slide = con2, con8-->
+    <script src="js/con_banner_con2.js"></script>
+    <script src="js/con_banner_con8.js"></script>
+    <!--content button = top ad, con1, 4~7, 9-->
+    <script src="js/con_button_bundle.js"></script>
+    <!--content ajax= con0(top), con1, con4, con5, con7-->
+    <script src="js/con_ajax_con0_top.js"></script>
+    <script src="js/con_ajax_con1.js"></script>
+    <script src="js/con_ajax_con4.js"></script>
+    <script src="js/con_ajax_con5.js"></script>
+    <script src="js/con_ajax_con6.js"></script>
+    <script src="js/con_ajax_con7.js"></script>
+</head>
+
+<body>
+    <!--
+        header start
+        top : 홈페이지 최상단 - 광고
+    -->
+    <div id="top">
+        <div class="top-wrap">
+            <div class="left">
+                <a href="#">
+                    <img src="img/1.top/1.jpg">
+                </a>
+            </div>
+            <div class="right">
+                <a href="#">
+                    <img src="img/1.top/2.jpg">
+                </a>
+            </div>
+            <div class="close">
+                <a href="#">
+                    <img src="img/1.top/3.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--header : 홈페이지 상단 - 메뉴 및 로그인 네비게이션-->
+    <header>
+        <div id="head-top">
+            <div class="top-navs">
+                <!--top-nav1 : HOME, 국내도서, 외국도서 등등 북플·서재까지-->
+                <ul class="top-nav1">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">국내도서</a></li>
+                    <li><a href="#">외국도서</a></li>
+                    <li><a href="#">eBook</a></li>
+                    <li><a href="#">알라딘굿즈</a></li>
+                    <li><a href="#">온라인중고</a></li>
+                    <li><a href="#">우주점</a></li>
+                    <li><a href="#">중고매장</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">음반</a></li>
+                    <li><a href="#">블루레이</a></li>
+                    <li><a href="#">북플 · 서재</a></li>
+                </ul>
+                <!--top-nav2 : 알라디너TV, 이 책의 한 문장, 북펀드-->
+                <ul class="top-nav2">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">장바구니(0)</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--head-wrapAll : 홈페이지 상단 - 로고 및 검색란, 메뉴 네비게이션-->
+        <div id="head-wrapAll">
+            <!--head-wrap1 : 로고 및 검색란 그리고 광고 이미지-->
+            <div id="head-wrap1">
+                <div class="head-logo">
+                    <a href="index.html">
+                        <img src="img/2.head_wrap/1.jpg" alt="로고">
+                    </a>
+                </div>
+                <!--head-form : 검색란-->
+                <div class="head-form">
+                    <div class="in-box1">
+                        <span><a href="#">통합검색</a>
+                            <!--head-form-in-box-sub1 : 통합검색 메뉴 - show : javascript / con_menu_head-->
+                            <ul class="head-form-in-box-sub1">
+                                <li><a href="sub.html">통합검색</a></li>
+                                <li><a href="sub.html">국내도서</a></li>
+                                <li><a href="sub.html">외국도서</a></li>
+                                <li><a href="sub.html">eBook</a></li>
+                                <li><a href="sub.html">알라딘굿즈</a></li>
+                                <li><a href="sub.html">온라인중고</a></li>
+                                <li><a href="sub.html">중고매장</a></li>
+                                <li><a href="sub.html">커피</a></li>
+                                <li><a href="sub.html">음반</a></li>
+                                <li><a href="sub.html">블루레이</a></li>
+                                <li>
+                                    <img src="img/2.head_wrap/eventlayer_se.gif">
+                                </li>
+                                <li><a href="sub.html">서재검색</a></li>
+                                <li><a href="sub.html">서재태그</a></li>
+                                <li><a href="sub.html">마이리뷰</a></li>
+                                <li><a href="sub.html">마이리스트</a></li>
+                                <li><a href="sub.html">마이페이퍼</a></li>
+                                <li><a href="sub.html">서재</a></li>
+                            </ul>
+                        </span>
+                        <img src="img/2.head_wrap/3.gif" alt="통합검색">
+                    </div>
+                    <!--head-form > .in-box2, in-box3 : 검색란-->
+                    <div class="in-box2">
+                        <input type="text" placeholder="조지 손더스 <바르도의 링컨>">
+                    </div>
+                    <div class="in-box3">
+                        <button type="button">검색</button>
+                    </div>
+                </div>
+                <!--head-ad : 광고 이미지-->
+                <div class="head-ad">
+                    <img src="img/2.head_wrap/2.jpg" alt="이꽃님 첫 연애소설 <여름을 한 입 베어 물었더니>">
+                </div>
+            </div>
+            <!--head-wrap2 : 분야보기, 추천마법사 등등 -  알라디너TV ~ 북펀드까지-->
+            <div id="head-wrap2">
+                <!--head-nav1 : 분야보기 ~ 투비컨티뉴드-->
+                <div class="head-nav1">
+                    <!--h-nav1-menu : 분야보기 ~ 투비컨티뉴드의 wrap-->
+                    <ul class="h-nav1-menu">
+                        <li><a href="sub.html">분야보기</a>
+                            <!--h-nav1-menu-main : 분야보기의 서브 메뉴-->
+                            <div id="h-nav1-menu-main">
+                                <table cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="280" valign="top">
+                                                <div class="menu-main-tit">
+                                                    <a href="#">국내도서</a>
+                                                </div>
+                                                <div class="menu-main-con">
+                                                    <ul>
+                                                        <li><a href="#">건강/취미</a></li>
+                                                        <li><a href="#"><strong>경제경영</strong></a></li>
+                                                        <li><a href="#">공무원 수험서</a></li>
+                                                        <li><a href="#">과학</a></li>
+                                                        <li><a href="#">달력/기타</a></li>
+                                                        <li><a href="#">대학교재</a></li>
+                                                        <li><a href="#">만화</a></li>
+                                                        <li><a href="#">사회과학</a></li>
+                                                        <li><a href="#"><strong>소설/시/희곡</strong></a></li>
+                                                        <li><a href="#"><strong>수험서/자격증</strong></a></li>
+                                                        <li><a href="#"><strong>어린이</strong></a></li>
+                                                        <li><a href="#">에세이</a></li>
+                                                        <li><a href="#">여행</a></li>
+                                                        <li><a href="#">역사</a></li>
+                                                        <li><a href="#">예술/대중문화</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="#">외국어</a></li>
+                                                        <li><a href="#">요리/살림</a></li>
+                                                        <li><a href="#">유아</a></li>
+                                                        <li><a href="#"><strong>인문학</strong></a></li>
+                                                        <li><a href="#">자기계발</a></li>
+                                                        <li><a href="#">잡지</a></li>
+                                                        <li><a href="#">장르소설</a></li>
+                                                        <li><a href="#">전집/중고전집</a></li>
+                                                        <li><a href="#">종교/역학</a></li>
+                                                        <li><a href="#">좋은부모</a></li>
+                                                        <li><a href="#">청소년</a></li>
+                                                        <li><a href="#">컴퓨터/모바일</a></li>
+                                                        <li><a href="#"><strong>초등학교참고서</strong></a></li>
+                                                        <li><a href="#">중학교참고서</a></li>
+                                                        <li><a href="#"><strong>고등학교참고서</strong></a></li>
+                                                    </ul>
+                                                </div>
+                                                <br clear="all">
+                                                <div class="empty" style="padding: 12px 0 0 0;"></div>
+                                                <div class="menu-main-tit">
+                                                    <a href="#">알라딘 굿즈</a>
+                                                </div>
+                                                <div class="menu-main-con">
+                                                    <ul>
+                                                        <li><a href="#">가방.파우치</a></li>
+                                                        <li><a href="#">데스크용품</a></li>
+                                                        <li><a href="#"><strong>독서용품</strong></a></li>
+                                                        <li><a href="#">디지털</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="#"><strong>문구</strong></a></li>
+                                                        <li><a href="#">생활용품</a></li>
+                                                        <li><a href="#">의류.잡화</a></li>
+                                                        <li><a href="#">리빙.키친</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td width="8" background="img/2.head_wrap/icon_line.gif"></td>
+                                            <td width="280" valign="top">
+                                                <div class="menu-main-tit">
+                                                    <a href="#">외국도서</a>
+                                                </div>
+                                                <div class="menu-main-con">
+                                                    <ul>
+                                                        <li><a href="#"><strong>영미도서</strong></a></li>
+                                                        <li><a href="#">ELT/어학/사전</a></li>
+                                                        <li><a href="#">가정/원예/인테리어</a></li>
+                                                        <li><a href="#">건강/스포츠</a></li>
+                                                        <li><a href="#">경제경영</a></li>
+                                                        <li><a href="#">공예/취미/수집</a></li>
+                                                        <li><a href="#">만화</a></li>
+                                                        <li><a href="#">소설/시/희곡</a></li>
+                                                        <li><a href="#">여행</a></li>
+                                                        <li><a href="#">역사</a></li>
+                                                        <li><a href="#">요리</a></li>
+                                                        <li><a href="#">인문/사회</a></li>
+                                                        <li><a href="#">종교/명상/점술</a></li>
+                                                        <li><a href="#">청소년</a></li>
+                                                        <li><a href="#">해외잡지</a></li>
+                                                        <li><a href="#"><strong>일본도서</strong></a></li>
+                                                        <li><a href="#">문학</a></li>
+                                                        <li><a href="#">애니메이션 굿즈</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="#"><strong>어린이</strong></a></li>
+                                                        <li><a href="#">그림책</a></li>
+                                                        <li><a href="#">동화책</a></li>
+                                                        <li><a href="#">리더스</a></li>
+                                                        <li><a href="#">영어학습</a></li>
+                                                        <li><a href="#">챕터북</a></li>
+                                                        <li><a href="#">코스북</a></li>
+                                                        <li><a href="#"><strong>중국도서</strong></a></li>
+                                                        <li><a href="#">소설</a></li>
+                                                        <li><a href="#">중국어 교재</a></li>
+                                                        <li><a href="#"><strong>기타 언어권</strong></a></li>
+                                                        <li><a href="#">독일 도서</a></li>
+                                                        <li><a href="#">베트남 도서</a></li>
+                                                        <li><a href="#">스페인 도서</a></li>
+                                                        <li><a href="#">프랑스도서</a></li>
+                                                        <li><a href="#">기타 도서</a></li>
+                                                        <li><a href="#">잡지</a></li>
+                                                        <li><a href="#">코믹</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td width="8" background="img/2.head_wrap/icon_line.gif"></td>
+                                            <td width="140" valign="top">
+                                                <div class="menu-main-tit">
+                                                    <a href="#">eBook</a>
+                                                </div>
+                                                <div class="menu-main-con">
+                                                    <ul>
+                                                        <li><a href="#"><strong>경제경영</strong></a></li>
+                                                        <li><a href="#">라이트노벨</a></li>
+                                                        <li><a href="#"><strong>로맨스</strong></a></li>
+                                                        <li><a href="#"><strong>만화</strong></a></li>
+                                                        <li><a href="#">사회과학</a></li>
+                                                        <li><a href="#"><strong>소설/시</strong></a></li>
+                                                        <li><a href="#">어린이</a></li>
+                                                        <li><a href="#"><strong>에세이</strong></a></li>
+                                                        <li><a href="#">역사</a></li>
+                                                        <li><a href="#">예술/대중문화</a></li>
+                                                        <li><a href="#"><strong>인문학</strong></a></li>
+                                                        <li><a href="#"><strong>자기계발</strong></a></li>
+                                                        <li><a href="#">중교/역학</a></li>
+                                                        <li><a href="#">청소년</a></li>
+                                                        <li><a href="#">판타지/무협</a></li>
+                                                        <li><a href="#"><strong>BL</strong></a></li>
+                                                        <li><a href="#"><strong>오디오북</strong></a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td width="8" background="img/2.head_wrap/icon_line.gif"></td>
+                                            <td width="140" valign="top">
+                                                <div class="menu-main-tit">
+                                                    <a href="#">온라인중고</a>
+                                                </div>
+                                                <div class="menu-main-con">
+                                                    <ul>
+                                                        <li><a href="#"><strong><font color="#e9308e">중고매장</font></strong></a></li>
+                                                        <li><a href="#"><strong>중고 국내도서</strong></a></li>
+                                                        <li><a href="#">경제경영</a></li>
+                                                        <li><a href="#">만화</a></li>
+                                                        <li><a href="#">사회과학</a></li>
+                                                        <li><a href="#">소설/시/희곡</a></li>
+                                                        <li><a href="#"><strong>어린이</strong></a></li>
+                                                        <li><a href="#">에세이</a></li>
+                                                        <li><a href="#">유아</a></li>
+                                                        <li><a href="#">인문학</a></li>
+                                                        <li><a href="#"><strong>중고 음반</strong></a></li>
+                                                        <li><a href="#">가요</a></li>
+                                                        <li><a href="#">국악</a></li>
+                                                        <li><a href="#">월드뮤직</a></li>
+                                                        <li><a href="#"><strong>클래식</strong></a></li>
+                                                        <li><a href="#">팝</a></li>
+                                                        <li><a href="#"><strong>중고 DVD/블루레이</strong></a></li>
+                                                        <li><a href="#"><strong>중고 외국도서</strong></a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td width="8" background="img/2.head_wrap/icon_line.gif"></td>
+                                            <td width="140" valign="top">
+                                                <div class="menu-main-tit">
+                                                    <a href="#">음반</a>
+                                                </div>
+                                                <div class="menu-main-con">
+                                                    <ul>
+                                                        <li><a href="#">가요</a></li>
+                                                        <li><a href="#">국악</a></li>
+                                                        <li><a href="#">월드뮤직</a></li>
+                                                        <li><a href="#">재즈</a></li>
+                                                        <li><a href="#">종교/명상/기타</a></li>
+                                                        <li><a href="#"><strong>클래식</strong></a></li>
+                                                        <li><a href="#">팝</a></li>
+                                                        <li><a href="#">J-POP</a></li>
+                                                        <li><a href="#"><strong>LP</strong></a></li>
+                                                        <li><a href="#">OST</a></li>
+                                                    </ul>
+                                                </div>
+                                                <br clear="all">
+                                                <div class="empty" style="padding: 12px 0 0 0;"></div>
+                                                <div class="menu-main-tit">
+                                                    <a href="#">블루레이</a>
+                                                </div>
+                                                <div class="menu-main-con">
+                                                    <ul>
+                                                        <li><a href="#">공포/스릴러</a></li>
+                                                        <li><a href="#">드라마/코미디</a></li>
+                                                        <li><a href="#"><strong>블루레이</strong></a></li>
+                                                        <li><a href="#">애니메이션</a></li>
+                                                        <li><a href="#">액션/어드벤쳐</a></li>
+                                                        <li><a href="#">음악DVD</a></li>
+                                                        <li><a href="#">S.F/판타지</a></li>
+                                                        <li><a href="#">TV/시리즈</a></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li><span>│</span></li>
+                        <li><a href="sub.html">추천마법사<img src="img/2.head_wrap/7.png" alt="더보기">
+                            </a>
+                            <!--h-nav1-menu-sub1, 2 : 추천마법사, 새로나온 책, 이벤트, 추천도서의 서브 메뉴-->
+                            <ul class="h-nav1-menu-sub1">
+                                <li><a href="sub.html">마법사의 선택</a></li>
+                                <li><a href="sub.html">신간알리미</a></li>
+                                <li><a href="sub.html">서재이웃의선택</a></li>
+                                <li><a href="sub.html">오늘 본 상품</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">베스트셀러</a></li>
+                        <li><a href="sub.html">새로나온 책<img src="img/2.head_wrap/7.png" alt="더보기">
+                            </a>
+                            <ul class="h-nav1-menu-sub2">
+                                <li><a href="#">새로나온책</a></li>
+                                <li><a href="#">새로나올책</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">이벤트<img src="img/2.head_wrap/7.png" alt="더보기">
+                            </a>
+                            <ul class="h-nav1-menu-sub1">
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#">굿즈 총집합</a></li>
+                                <li><a href="#">정가인하도서</a></li>
+                                <li><a href="#">작가와의 만남</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">추천도서<img src="img/2.head_wrap/7.png" alt="더보기">
+                            </a>
+                            <ul class="h-nav1-menu-sub2">
+                                <li><a href="#">추천도서</a></li>
+                                <li><a href="#">출판사 랭킹</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">단한권 인쇄소 <span class="new">N</span></a></li>
+                        <li><a href="sub.html">투비컨티뉴드<span>
+                                    <img src="img/2.head_wrap/9.svg" alt="더보기2">
+                                </span></a></li>
+                    </ul>
+                </div>
+                <div class="head-nav2">
+                    <ul class="h-nav2-menu">
+                        <li><a href="sub.html">알라디너TV</a></li>
+                        <li><span>·</span></li>
+                        <li><a href="sub.html">이 책의 한 문장</a>
+                            <!--h-nav2-menu-sub1 : 이 책의 한 문장의 서브 메뉴-->
+                            <ul class="h-nav2-menu-sub1">
+                                <li><a href="#">이 책의 한 문장</a></li>
+                                <li><a href="#">카드리뷰</a></li>
+                                <li><a href="#">북트레일러</a></li>
+                            </ul>
+                        </li>
+                        <li><span>·</span></li>
+                        <li><a href="sub.html">북펀드</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+    <!--
+        section : main start
+        main-wrap :  메인 콘텐츠 wrap
+    -->
+    <section>
+        <div id="main-wrap">
+            <!--content-top, con0 : 광고 및 배너-->
+            <div class="content-top">
+                <!--left-bn : 왼쪽 광고 이미지-->
+                <div class="left-bn">
+                    <a href="sub.html">
+                        <img src="img/3.con_top/1.jpg" alt="위풍당당여우꼬리4">
+                    </a>
+                </div>
+                <!--center-sd : 가운데 메인-->
+                <div class="center-sd">
+                    <!--center-lf : 메인의 사이드 - 문진 ~ 노벨문학상-->
+                    <div class="center-lf">
+                        <ul>
+                            <li><a href="sub.html">
+                                    <img src="img/3.con_top/4.gif" alt="문진">
+                                </a></li>
+                            <li><a href="sub.html">
+                                    <img src="img/3.con_top/5.gif" alt="그림책담다">
+                                </a></li>
+                            <li><a href="sub.html">
+                                    <img src="img/3.con_top/6.gif" alt="레트로컵">
+                                </a></li>
+                            <li><a href="sub.html">
+                                    <img src="img/3.con_top/7.gif" alt="노벨문학상">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <!--center-mn : 메인 콘텐츠 wrap-->
+                    <div class="center-mn">
+                        <!--mn-top : 메인의 위, 책 또는 광고 뜨는 부분-->
+                        <div class="mn-top">
+                            <!--book-sd1 : 편집장의 선택-->
+                            <div class="book-sd1">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--book-sd2 : 추천 이벤트-->
+                            <div class="book-sd2">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--book-sd3 : 이 주의 책-->
+                            <div class="book-sd3">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--book-sd4 : 신간 소개-->
+                            <div class="book-sd4">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--book-sd5 : 베스트 예감-->
+                            <div class="book-sd5">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--book-sd6 : 화제의 책-->
+                            <div class="book-sd6">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--book-sd7 : 이벤트 굿즈-->
+                            <div class="book-sd7">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--book-sd8 : 눈에 띄는 새책-->
+                            <div class="book-sd8">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--book-sd9 : eBook-->
+                            <div class="book-sd9">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <!--mn-bot : 메인의 아래, 제목 탭-->
+                        <div class="mn-bot">
+                            <!--tab-menu : 제목 탭 wrap-->
+                            <div class="tab-menu">
+                                <div class="sd-menu1">편집장의 선택</div>
+                                <div class="sd-menu2">추천 이벤트</div>
+                                <div class="sd-menu3">이 주의 책</div>
+                                <div class="sd-menu4">신간 소개</div>
+                                <div class="sd-menu5">베스트 예감</div>
+                                <div class="sd-menu6">화제의 책</div>
+                                <div class="sd-menu7">이벤트 굿즈</div>
+                                <div class="sd-menu8">눈에 띄는 새책</div>
+                                <div class="sd-menu9">eBook</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--right-bn : 알라딘 us, 도서관 사서, 광고 이미지-->
+                <div class="right-bn">
+                    <ul>
+                        <li><a href="sub.html">
+                                <span class="bn-top">알라딘 us</span>
+                            </a></li>
+                        <li><a href="sub.html">
+                                <span class="bn-bot">도서관 사서</span>
+                            </a></li>
+                        <li><a href="sub.html">
+                                <img src="img/3.con_top/2.jpg" alt="추석맞이쿠폰">
+                            </a></li>
+                        <li><a href="sub.html">
+                                <img src="img/3.con_top/3.jpg" alt="책과함께무료배송">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--content1 : 첫 번째 콘텐츠 - 편집장의 선택 ~ 알라딘굿즈 및 광고-->
+            <div class="content1">
+                <div class="con1-wrap">
+                    <!--con1-left : 편집장의 선택 ~ 알리딘굿즈 콘텐츠-->
+                    <div class="con1-left">
+                        <!--con1-lf-top : 분야 탭 및 버튼 wrap-->
+                        <div class="con1-lf-top">
+                            <!--con1-tab :  분야 탭, tab1-편집장의 선택, tab2-eBook, tab3-외국도서, tab4-알라딘굿즈-->
+                            <div class="con1-tab">
+                                <div class="con1-tab1"><a href="sub.html">편집장의 선택</a></div>
+                                <div class="con1-tab2"><a href="sub.html">eBook</a></div>
+                                <div class="con1-tab3"><a href="sub.html">외국도서</a></div>
+                                <div class="con1-tab4"><a href="sub.html">알라딘굿즈</a></div>
+                            </div>
+                            <!--con1-btn : 편집장의 선택 ~ 알라딘굿즈 콘텐츠 제어하는 버튼-->
+                            <div class="con1-btn">
+                                <button type="button" class="con1-prev"></button>
+                                <button type="button" class="con1-next"></button>
+                            </div>
+                        </div>
+                        <!--con1-lf-bot : 편집장의 선택 ~ 알라딘굿즈 콘텐츠 wrap-->
+                        <div class="con1-lf-bot">
+                            <!--con1-bot1 : 편집장의 선택 wrap-->
+                            <div class="con1-bot1">
+                                <!--con1-bot1-1 : 편집장의 선택 1page-->
+                                <div class="con1-bot1-1">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot1-2 : 편집장의 선택 2page-->
+                                <div class="con1-bot1-2">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot1-3 : 편집장의 선택 3page-->
+                                <div class="con1-bot1-3">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot1-4 : 편집장의 선택 4page-->
+                                <div class="con1-bot1-4">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <!--con1-bot2 : eBook wrap-->
+                            <div class="con1-bot2">
+                                <!--con1-bot2-1 : eBook 1page-->
+                                <div class="con1-bot2-1">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot2-2 : eBook 2page-->
+                                <div class="con1-bot2-2">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot2-3 : eBook 3page-->
+                                <div class="con1-bot2-3">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot2-4 : eBook 4page-->
+                                <div class="con1-bot2-4">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <!--con1-bot3 : 외국도서 wrap-->
+                            <div class="con1-bot3">
+                                <!--con1-bot3-1 : 외국도서 1page-->
+                                <div class="con1-bot3-1">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot3-2 : 외국도서 2page-->
+                                <div class="con1-bot3-2">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot3-3 : 외국도서 3page-->
+                                <div class="con1-bot3-3">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <!--con1-bot4 : 알라딘굿즈 wrap-->
+                            <div class="con1-bot4">
+                                <!--con1-bot4-1 : 외국도서 1page-->
+                                <div class="con1-bot4-1">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot4-2 : 외국도서 2page-->
+                                <div class="con1-bot4-2">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <!--con1-bot4-3 : 외국도서 3page-->
+                                <div class="con1-bot4-3">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--con1-right : 광고 배너 이미지-->
+                    <div class="con1-right">
+                        <!--con1-bns : 광고 배너 이미지 wrap-->
+                        <div class="con1-bns">
+                            <div class="con1-bn1"><img src="img/4.con_1/ad1/1.jpg" alt="조르주 페렉 에세이"></div>
+                            <div class="con1-bn2"><img src="img/4.con_1/ad1/2.jpg" alt="독자북펀드"></div>
+                        </div>
+                        <!--con1-prev2, con1-next2 : 광고 배너 제어하는 버튼-->
+                        <button type="button" class="con1-prev2"></button>
+                        <button type="button" class="con1-next2"></button>
+                    </div>
+                </div>
+            </div>
+
+            <!--content2 : 두 번째 콘텐츠 - 어제 베스트 셀러 TOP 10 및 광고-->
+            <div class="content2">
+                <div class="con2-wrap">
+                    <!--con2-left : 어제 베스트셀러 TOP 10 메인 콘텐츠-->
+                    <div class="con2-left">
+                        <!--con2-lf-tab : 어제 베스트셀러 TOP 10 제목 wrap-->
+                        <div class="con2-lf-tab">
+                            <h3><a href="sub.html">어제 베스트셀러 TOP 10</a></h3>
+                        </div>
+                        <div class="con2-lf-list">
+                            <!--con2-list : 베스트셀러 목록-->
+                            <ol class="con2-list">
+                                <li>
+                                    <div class="bk-cover">
+                                        <a href="sub.html">
+                                            <img src="img/5.con_2/rank1/1.jpg" alt="best1">
+                                        </a>
+                                    </div>
+                                    <span class="rank">1</span>
+                                    <p>
+                                        <a href="sub.html">도시와 그 불확실한 벽</a>
+                                    </p>
+                                    <span class="status-up">1</span>
+                                </li>
+                                <li>
+                                    <div class="bk-cover">
+                                        <a href="sub.html">
+                                            <img src="img/5.con_2/rank1/2.jpg" alt="best2">
+                                        </a>
+                                    </div>
+                                    <span class="rank">2</span>
+                                    <p>
+                                        <a href="sub.html">퓨처 셀프</a>
+                                    </p>
+                                    <span class="status-up">3</span>
+                                </li>
+                                <li>
+                                    <span class="rank">3</span>
+                                    <p>
+                                        <a href="sub.html">괴수 8호 10 (초판한정 키...</a>
+                                    </p>
+                                    <span class="status-new">new</span>
+                                </li>
+                                <li>
+                                    <span class="rank">4</span>
+                                    <p>
+                                        <a href="sub.html">오늘도 나아가는 중입니다</a>
+                                    </p>
+                                    <span class="status-up">2</span>
+                                </li>
+                                <li>
+                                    <span class="rank">5</span>
+                                    <p>
+                                        <a href="sub.html">디케의 눈물</a>
+                                    </p>
+                                    <span class="status-down">1</span>
+                                </li>
+                                <li>
+                                    <span class="rank">6</span>
+                                    <p>
+                                        <a href="sub.html">밀랍인형폭렬학원가 5~8 ...</a>
+                                    </p>
+                                    <span class="status-new">new</span>
+                                </li>
+                                <li>
+                                    <span class="rank">7</span>
+                                    <p>
+                                        <a href="sub.html">도둑맞은 집중력</a>
+                                    </p>
+                                    <span class="status-still"></span>
+                                </li>
+                                <li>
+                                    <span class="rank">8</span>
+                                    <p>
+                                        <a href="sub.html">단 한 사람</a>
+                                    </p>
+                                    <span class="status-still"></span>
+                                </li>
+                                <li>
+                                    <span class="rank">9</span>
+                                    <p>
+                                        <a href="sub.html">아포리아 시즌 2 : 1~3 세...</a>
+                                    </p>
+                                    <span class="status-new">new</span>
+                                </li>
+                                <li>
+                                    <span class="rank">10</span>
+                                    <p>
+                                        <a href="sub.html">괴수 8호 10 (아크릴 굿즈 ...</a>
+                                    </p>
+                                    <span class="status-new">new</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!--con2-right : 광고 배너 이미지 슬라이드 / javascrip : con_banner_con2.js-->
+                    <div class="con2-right">
+                        <!--con2-bn : 배너 이미지 wrap-->
+                        <div class="con2-bn">
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/1.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/2.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/3.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/4.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/5.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/6.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/7.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/8.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/9.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/10.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/11.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/12.jpg" alt="eBookAD-banner">
+                            </div>
+                            <div class="con2-bns">
+                                <img src="img/5.con_2/bn1/13.jpg" alt="eBookAD-banner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--content3 : 세 번째 콘텐츠 - 중간 광고 배너 이미지-->
+            <div class="content3">
+                <!--con3-bgc : 배너 이미지의 뒷배경-->
+                <div class="con3-bgc">
+                    <div class="con3-bgc1"></div>
+                    <div class="con3-bgc2"></div>
+                </div>
+                <!--con3-wrap : 배너 이미지와 버튼의 wrap-->
+                <div class="con3-wrap">
+                    <div class="con3-bn">
+                        <div class="con3-btn">
+                            <button type="button" class="con3-prev"></button>
+                            <button type="button" class="con3-next"></button>
+                        </div>
+                        <div class="con3-bns">
+                            <div class="con3-bn1">
+                                <img src="img/6.con_3/1.png" alt="center-ADbn1">
+                            </div>
+                            <div class="con3-bn2">
+                                <img src="img/6.con_3/2.png" alt="center-ADbn2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--content4 : 네 번째 콘텐츠 - 추천마법사의 선택-->
+        <div class="content4">
+            <div class="con4-wrap">
+                <!--con4-top : 제목 및 버튼의 wrap-->
+                <div class="con4-top">
+                    <h3>
+                        <a href="sub.html">추천마법사의 선택　</a>
+                        <span>지금 로그인하시면 추천마법사가 선택한 책을 보여드립니다.　<a href="sub.html">로그인하기</a></span>
+                    </h3>
+                    <!--con4-prev, con4-next : 버튼-->
+                    <div class="con4-btn">
+                        <button type="button" class="con4-prev"></button>
+                        <button type="button" class="con4-next"></button>
+                    </div>
+                </div>
+                <!--con4-bottom : 네 번째 콘텐츠 메인-->
+                <div class="con4-bottom">
+                    <div class="con4-bk">
+                        <!--
+                            con4-bk-wrap : 책 목록들의 wrap
+                            imgA : 책 목록 속 이미지(책 커버), con4-bk-menu : 커버 속 숨겨진 서브 메뉴
+                        -->
+                        <div class="con4-bk-wrap">
+                            <!--con4-bk1 : 책 목록 1page-->
+                            <div class="con4-bk1">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--con4-bk2 : 책 목록 2page-->
+                            <div class="con4-bk2">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--con4-bk3 : 책 목록 3page-->
+                            <div class="con4-bk3">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--con4-bk4 : 책 목록 4page-->
+                            <div class="con4-bk4">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--content5 : 다섯 번째 콘텐츠 - 화제의 책 소식-->
+        <div class="content5">
+            <div class="con5-wrap">
+                <!--con5-top : 제목 및 버튼의 wrap-->
+                <div class="con5-top">
+                    <h3>화제의 책 소식</h3>
+                    <div class="con5-btn">
+                        <button type="button" class="con5-prev"></button>
+                        <button type="button" class="con5-next"></button>
+                    </div>
+                </div>
+                <!--con5-bottom : 다섯 번째 콘텐츠의 메인-->
+                <div class="con5-bottom">
+                    <div class="con5-bk">
+                        <div class="con5-bk-wrap">
+                            <!--con5-bk1 : 책 소식 1page-->
+                            <div class="con5-bk1">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--con5-bk2 : 책 소식 2page-->
+                            <div class="con5-bk2">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--con5-bk3 : 책 소식 3page-->
+                            <div class="con5-bk3">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--content6 : 여섯 번째 콘텐츠 - 알라딘이 만든 사은품-->
+        <div class="content6">
+            <div class="con6-wrap">
+                <!--con6-top : 제목 및 버튼-->
+                <div class="con6-top">
+                    <h3>알라딘이 만든 사은품</h3>
+                    <div class="con6-btn">
+                        <button type="button" class="con6-prev"></button>
+                        <button type="button" class="con6-next"></button>
+                    </div>
+                </div>
+                <!--con6-bottom : 여섯 번째 콘텐츠의 메인-->
+                <div class="con6-bottom">
+                    <div class="con6-gd">
+                        <div class="con6-gd-wrap">
+                            <!--con6-gd1 : 사은품 1page-->
+                            <div class="con6-gd1">
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/1.jpg" alt="우드볼 + 숟가락">
+                                        <div class="con6-gd1-txt">
+                                            <p>우드볼 + 숟가락</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/2.jpg" alt="유리 찻주전자">
+                                        <div class="con6-gd1-txt">
+                                            <p>유리 찻주전자</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/3.jpg" alt="페어리 테일 고블렛잔">
+                                        <div class="con6-gd1-txt">
+                                            <p>페어리 테일 고블렛잔</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--con6-gd2 : 사은품 2page-->
+                            <div class="con6-gd2">
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/4.jpg" alt="여행자를 위한 이름표">
+                                        <div class="con6-gd1-txt">
+                                            <p>여행자를 위한 이름표</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/5.jpg" alt="레트로 유리컵">
+                                        <div class="con6-gd1-txt">
+                                            <p>레트로 유리컵</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/6.jpg" alt="북 슬리브">
+                                        <div class="con6-gd1-txt">
+                                            <p>북 슬리브</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--con6-gd3 : 사은품 3page-->
+                            <div class="con6-gd3">
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/7.jpg" alt="노벨문학상 망토 담요">
+                                        <div class="con6-gd1-txt">
+                                            <p>노벨문학상 망토 담요</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/8.jpg" alt="유리 반구 문진">
+                                        <div class="con6-gd1-txt">
+                                            <p>유리 반구 문진</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/9.jpg" alt="사울 레이터 북 슬리브">
+                                        <div class="con6-gd1-txt">
+                                            <p>사울 레이터 북 슬리브</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--con6-gd4 : 사은품 4page-->
+                            <div class="con6-gd4">
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/10.jpg" alt="최진영 <단 한 사람> 텀블러">
+                                        <div class="con6-gd1-txt">
+                                            <p>최진영 <단 한 사람> 텀블러</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/11.jpg" alt="원형 메모리폼 방석">
+                                        <div class="con6-gd1-txt">
+                                            <p>원형 메모리폼 방석</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="sub.html">
+                                        <img src="img/9.con_6/12.jpg" alt="노벨문학상 텀블러">
+                                        <div class="con6-gd1-txt">
+                                            <p>노벨문학상 텀블러</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--content7 : 일곱 번째 콘텐츠 - 알라딘 스페셜-->
+        <div class="content7">
+            <div class="con7-wrap">
+                <!--con7-top : 제목 및 버튼-->
+                <div class="con7-top">
+                    <div class="con7-top-txt">
+                        <h3>
+                            <a href="sub.html">알라딘 스페셜</a>
+                        </h3>
+                        <p>단독 판매</p>
+                    </div>
+                    <div class="con7-btn">
+                        <button type="button" class="con7-prev"></button>
+                        <button type="button" class="con7-next"></button>
+                    </div>
+                </div>
+                <!--con7-bottom : 일곱 번째 콘텐츠의 메인-->
+                <div class="con7-bottom">
+                    <div class="con7-sp">
+                        <div class="con7-sp-wrap">
+                            <!--con7-sp1 : 1page-->
+                            <div class="con7-sp1">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--con7-sp2 : 2page-->
+                            <div class="con7-sp2">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--con7-sp3 : 3page-->
+                            <div class="con7-sp3">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <!--con7-sp4 : 4page-->
+                            <div class="con7-sp4">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--content8 : 여덟 번째 콘텐츠 - 세 개의 광고 배너 이미지-->
+        <div class="content8">
+            <div class="con8-bn">
+                <div class="con8-bn-wrap">
+                    <!--con8-bn1 : 1page-->
+                    <div class="con8-bn1">
+                        <img src="img/11.con_8/1.jpg" alt="시대예보: 핵개인의 시대">
+                        <img src="img/11.con_8/2.jpg" alt="들꽃 식혜">
+                        <img src="img/11.con_8/3.jpg" alt="비스킷">
+                    </div>
+                    <!--con8-bn2 : 2page-->
+                    <div class="con8-bn2">
+                        <img src="img/11.con_8/4.jpg" alt="브레인포그">
+                        <img src="img/11.con_8/5.jpg" alt="보통의 언어들 포레스트 에디션">
+                        <img src="img/11.con_8/6.jpg" alt="좋은 엄마 학교">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--content9 : 아홉 번째 콘텐츠 - 추천 노트-->
+        <div class="content9">
+            <div class="con9-wrap">
+                <!--con9-top : 제목 및 버튼-->
+                <div class="con9-top">
+                    <h3>TO BE CONTINUED...추천 노트</h3>
+                    <p>끝나지 않는 이야기, <span>투비컨티뉴드 ></span></p>
+                </div>
+                <div class="con9-btn">
+                    <button type="button" class="con9-prev"></button>
+                    <button type="button" class="con9-next"></button>
+                </div>
+                <!--con9-bottom : 아홉 번째 콘텐츠의 메인-->
+                <div class="con9-bottom">
+                    <div class="con9-nt">
+                        <div class="con9-nt-wrap">
+                            <!--con9-nt1 : 1page-->
+                            <div class="con9-nt1">
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/1.png" alt="추천노트1">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>지금 여기에서 펼쳐지는 저기 언젠가의 이야기</h3>
+                                        <p>자음과모음</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/2.png" alt="추천노트2">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>2023 볼라뇨 축제</h3>
+                                        <p>R. Bolaño</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/3.jpg" alt="추천노트3">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>미깡이 또 술 얘기한대</h3>
+                                        <p>미깡</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/4.jpg" alt="추천노트4">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>송넌의 모녀 여행기</h3>
+                                        <p>송넌</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/5.jpeg" alt="추천노트5">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>우울증 핸드북</h3>
+                                        <p>오지은</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--con9-nt2 : 2page-->
+                            <div class="con9-nt2">
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/6.jpg" alt="추천노트6">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>미스터리 장르, 단계별 추천 100선</h3>
+                                        <p>otonacool</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/7.jpg" alt="추천노트7">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>파김치의 쭈글쭈글한 일기장</h3>
+                                        <p>허안나</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/8.jpg" alt="추천노트8">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>오늘 아무것도 안 씀</h3>
+                                        <p>금정연</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/9.png" alt="추천노트9">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>백합의 우울</h3>
+                                        <p>하시아</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="con9-img">
+                                        <img src="img/12.con_9/10.png" alt="추천노트10">
+                                    </div>
+                                    <div class="con9-txt">
+                                        <h3>근원? 근심!</h3>
+                                        <p>차연조</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--content10 : 열 번째 콘텐츠 - 알라디너 TV 및 작가와의 만남-->
+        <div class="content10">
+            <div class="con10-wrap">
+                <!--con10-tv : 알라디너 TV-->
+                <div class="con10-tv">
+                    <div class="con10-tv-top">
+                        <h3>알라디너 TV</h3>
+                    </div>
+                    <!--con10-tv-bot : 알리디너 TV 콘텐츠 메인-->
+                    <div class="con10-tv-bot">
+                        <div class="con10-tv-bot-wrap">
+                            <div class="con10-tv-bot-mn">
+                                <!--con10-tv-mn-thumb : 썸네일-->
+                                <div class="con10-tv-mn-thumb">
+                                    <a href="sub.html">
+                                        <img src="img/13.con_10/tv/1.jpg" alt="tv1">
+                                    </a>
+                                </div>
+                                <!--con10-tv-mn-txt : 알라디너 TV 콘텐츠 텍스트 (제목, 해시태그, 조회수)-->
+                                <div class="con10-tv-mn-txt">
+                                    <h3><a href="sub.html">무빙에서 원하는 초능력은?</a></h3>
+                                    <p><a href="sub.html">#shorts</a></p>
+                                    <p>- 조회수 1,108</p>
+                                </div>
+                            </div>
+                            <div class="con10-tv-bot-mn">
+                                <div class="con10-tv-mn-thumb">
+                                    <a href="sub.html">
+                                        <img src="img/13.con_10/tv/2.jpg" alt="tv2">
+                                    </a>
+                                </div>
+                                <div class="con10-tv-mn-txt">
+                                    <h3><a href="sub.html">알라딘 9월 굿즈 & 어린이 도서 언박싱 (+라면 면기 /우드볼 세트👍)</a></h3>
+                                    <p><a href="sub.html">
+                                            #어린이도서 #친구의전설 #라면먹기 <br>#조카선물 #알라딘굿즈자랑
+                                        </a></p>
+                                    <p>자몽샤샥 조회수 967</p>
+                                </div>
+                            </div>
+                            <div class="con10-tv-bot-mn">
+                                <div class="con10-tv-mn-thumb">
+                                    <a href="sub.html">
+                                        <img src="img/13.con_10/tv/3.jpg" alt="tv3">
+                                    </a>
+                                </div>
+                                <div class="con10-tv-mn-txt">
+                                    <h3><a href="sub.html">나는 화성탐사 로봇 오퍼튜니티입니다.</a></h3>
+                                    <p><a href="sub.html">#1분1북 #shorts #책추천</a></p>
+                                    <p>hangju 조회수 929</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--con10-meet : 작가와의 만남-->
+                <div class="con10-meet">
+                    <div class="con10-meet-top">
+                        <h3>작가와의 만남</h3>
+                    </div>
+                    <!--
+                        con10-meet-bot : 작가와의 만남 콘텐츠의 메인
+                        con10-meet-bot-wrap : 콘텐츠(2개)의 전체 wrap
+                    -->
+                    <div class="con10-meet-bot">
+                        <div class="con10-meet-bot-wrap">
+                            <div class="con10-meet-bot-mn">
+                                <div class="con10-meet-bot-mn-img">
+                                    <img src="img/13.con_10/meet/1.jpg" alt="meet1">
+                                </div>
+                                <div class="con10-meet-bot-mn-txt">
+                                    <h3>번역가에게 듣는 아니 에르노 이야기
+                                        <br>
+                                        <바깥 일기>, <밖의 삶> 출간 기념 북토크
+                                    </h3>
+                                    <p>10월 19일 (목) 오후 7시 30분</p>
+                                </div>
+                            </div>
+                            <div class="con10-meet-bot-mn">
+                                <div class="con10-meet-bot-mn-img">
+                                    <img src="img/13.con_10/meet/2.jpg" alt="meet1">
+                                </div>
+                                <div class="con10-meet-bot-mn-txt">
+                                    <h3>
+                                        임솔아 X 강화길 북토크
+                                        <br>
+                                        <나는 지금도 거기 있어>
+                                    </h3>
+                                    <p>10월 13일 (금) 오후 7시 30분</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--
+        common - restart
+        footer start
+    -->
+    <footer>
+        <div class="footer-wrap">
+            <!--footer menu : 회사소개 ~ 학교·기업·기관 대량구매-->
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">채용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#"><span>개인정보처리방침</span></a></li>
+                    <li><a href="#">청소년 보호정책</a></li>
+                    <li><a href="#">중고매장</a></li>
+                    <li><a href="#">제휴·마케팅 안내</a></li>
+                    <li><a href="#">판매자 매니저</a></li>
+                    <li><a href="#">출판사·공급사 안내</a></li>
+                    <li><a href="#">광고 안내</a></li>
+                    <li><a href="#">학교·기업·기관 대량구매</a></li>
+                </ul>
+            </div>
+            <!--footer info : 알라딘 소개 및 고객센터-->
+            <div class="footer-info">
+                <!--ft-left : 알라딘 소개-->
+                <div class="ft-left">
+                    <div class="ft-if1">
+                        <h3>(주)알라딘커뮤니케이션</h3>
+                        <address>
+                            <span>대표이사 최우경</span>
+                            <span>고객정보보호 책임자 최우경</span>
+                            <span>사업자등록 201-81-23094</span>
+                            <span>통신판매업신고 중구01520호</span>
+                            <span>이메일 privacy@aladin.co.kr</span>
+                            <span>호스팅 제공자 알라딘커뮤니케이션</span>
+                            <span>(본사) 서울시 중구 서소문로 89-31</span>
+                            <div class="copyright">ⓒ Aladin Communication. All Rights Reserved.</div>
+                        </address>
+                    </div>
+                    <div class="ft-if2">
+                        <div class="certify">
+                            <a href="#"><p>구매안전 에스크로 서비스 가입 확인</p></a>
+                        </div>
+                        <div class="certify">
+                            <a href="#"><p>정보보호 관리체계 ISMS 인증획득</p></a>
+                        </div>
+                    </div>
+                </div>
+                <!--ft-right : 고객센터-->
+                <div class="ft-right">
+                    <div class="ft-rt1">
+                        <h3>고객센터 1544-2514 (발신자 부담)</h3>
+                        <address>
+                            <span>서울시 마포구 백범로 71 숨도빌딩 7층 Fax 02-6926-2600</span>
+                        </address>
+                    </div>
+                    <div class="ft-rt2">
+                        <div class="ft-rt2-top">
+                            <a href="#">1:1 문의</a>
+                            <a href="#">FAQ</a>
+                        </div>
+                        <div class="ft-rt2-bot">
+                            <a href="#">중고매장 위치, 영업시간 안내</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--go-top : 위로 가기 버튼 - javascript / con_button_go_top-->
+    <button type="button" class="go-top"></button>
+    <!--footer end-->
+</body>
+
+</html>
